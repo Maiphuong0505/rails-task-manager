@@ -1,0 +1,18 @@
+<div class="container d-flex justify-content-center align-items-center flex-column">
+  <div class="col-10">
+    <h1>Edit task</h1>
+    <%= form_with model:@task do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= f.check_box :completed %>
+    <%= f.label :completed, "Completed" %>
+    <%= f.submit %>
+    <% end %>
+    <hr>
+    <div id="back-to-list-link">
+      <%= link_to "Back to lists", tasks_path %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container d-flex justify-content-center align-items-center flex-column">
+  <div class="col-10">
+    <h1>New task</h1>
+    <%= render "form", task: @task %>
+    <%# <form>
+      <div class="mb-3">
+        <label for="taskTitle" class="form-label">Title</label>
+        <input type="text" class="form-control" id="taskTitle" aria-describedby="taskTitle">
+        <div id="taskTitle" class="form-text">Name your task</div>
+      </div>
+      <div class="mb-3">
+        <label for="details" class="form-label">Details</label>
+        <input type="text" class="form-control" id="details">
+        <div id="details" class="form-text">Describe your task</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form> %>
+    <hr>
+    <div id="back-to-list-link">
+      <%= link_to "Back to lists", tasks_path %>
+    </div>
+  </div>
+</div>
